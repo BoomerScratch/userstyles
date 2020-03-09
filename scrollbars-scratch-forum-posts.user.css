@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name          Scratch forum posts with scrollbar
+@description   Adds scrollbars to scratch forum posts if the post is too long
+@namespace     boomerscratch.github.io
+@author        BoomerScratch
+==/UserStyle== */
+
+@-moz-document url-prefix("https://scratch.mit.edu/discuss/topic/") {
+.postsignature {
+    overflow: auto;
+}
+.post_body_html {
+    overflow: auto;
+}
+}
