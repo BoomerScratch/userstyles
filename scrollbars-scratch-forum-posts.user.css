@@ -3,6 +3,7 @@
 @description   Adds scrollbars to scratch forum posts if the post is too long
 @namespace     boomerscratch.github.io
 @author        BoomerScratch
+@version       1.0
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://scratch.mit.edu/discuss/topic/") {
