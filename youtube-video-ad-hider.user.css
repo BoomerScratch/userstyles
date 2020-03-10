@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name          Youtube video ad hider
+@description   Hides ads on youtube videos
+@namespace     boomerscratch.github.io
+@author        BoomerScratch
+@version       1.0.1
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.youtube.com/watch") {
+ytd-iframe-companion-renderer,ytd-promoted-sparkles-web-renderer {
+    visibility: hidden
+}
+.ytp-ad-image-overlay {
+    visibility: hidden
+}
+}
