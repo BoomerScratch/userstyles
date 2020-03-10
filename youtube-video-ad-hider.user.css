@@ -7,7 +7,7 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.youtube.com/watch") {
-ytd-iframe-companion-renderer,ytd-promoted-sparkles-web-renderer {
+ytd-iframe-companion-renderer,ytd-promoted-sparkles-web-renderer,ytd-action-companion-ad-renderer {
     visibility: hidden
 }
 .ytp-ad-image-overlay {
