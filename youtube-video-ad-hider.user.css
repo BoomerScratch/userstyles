@@ -3,10 +3,10 @@
 @description   Hides ads on youtube videos
 @namespace     boomerscratch.github.io
 @author        BoomerScratch
-@version       1.0.2
+@version       1.0.3
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.youtube.com/watch") {
+@-moz-document url-prefix("https://www.youtube.com/watch"), url-prefix("https://www.youtube.com/embed/") {
 ytd-iframe-companion-renderer,ytd-promoted-sparkles-web-renderer,ytd-action-companion-ad-renderer {
     visibility: hidden
 }
