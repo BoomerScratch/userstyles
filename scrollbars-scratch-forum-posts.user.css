@@ -1,16 +1,27 @@
 /* ==UserStyle==
-@name          Scratch forum posts with scrollbar
-@description   Adds scrollbars to scratch forum posts if the post is too long
-@namespace     boomerscratch.github.io
-@author        BoomerScratch
-@version       1.0.1
+@name           Scratch forum scrollbars
+@namespace      boomerscratch.github.io
+@version        1.0.0
+@description    Adds scrollbars to scratch forum posts & signatures
+@author         BoomerScratch
+@homepageURL    https://github.com/BoomerScratch/userstyles/blob/master/scrollbars-scratch-forum-posts.user.css
+@supportURL     https://github.com/BoomerScratch/userstyles/issues/new/?title=Scratch%20forum%20scrollbars
+@updateURL      https://raw.githubusercontent.com/BoomerScratch/userstyles/master/scrollbars-scratch-forum-posts.user.css
+@var            checkbox siggy "Signature scrollbars?"  1
+@var            checkbox post  "Forum post scrollbars?" 1
+@license        MIT
+@preprocessor   stylus
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://scratch.mit.edu/discuss/topic/") {
+if (siggy) {
 .postsignature {
     overflow: auto;
 }
+}
+if (post) {
 .post_body_html {
     overflow: auto;
+}
 }
 }
