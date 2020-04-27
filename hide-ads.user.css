@@ -1,17 +1,19 @@
 /* ==UserStyle==
-@name          Ad hider
-@description   Hides (google) ads
-@namespace     boomerscratch.github.io
-@author        BoomerScratch
-@version       1.0.3
-@homepageURL   https://github.com/BoomerScratch/userstyles/blob/master/hide-ads.user.css
-@supportURL    https://github.com/BoomerScratch/userstyles/issues/new/?title=Ad%20hider
-@updateURL     https://raw.githubusercontent.com/BoomerScratch/userstyles/master/hide-ads.user.css
-@license       MIT
+@name           Ad hider
+@namespace      boomerscratch.github.io
+@version        1.0.4
+@description    Replaces ads with "Ads removed by ad hider userstyle"
+@author         BoomerScratch
+@homepageURL    https://github.com/BoomerScratch/userstyles/blob/master/hide-ads.user.css
+@supportURL     https://github.com/BoomerScratch/userstyles/issues/new/?title=Ad%20hider&body=_Please%20describe%20your%20problem_
+@updateURL      https://raw.githubusercontent.com/BoomerScratch/userstyles/master/hide-ads.user.css
+@license        MIT
 ==/UserStyle== */
-
-@-moz-document url-prefix("https://s0.2mdn.net/ads/"), url-prefix("https://s1.2mdn.net/ads/"), url-prefix("https://s2.2mdn.net/ads/"), url-prefix("https://s3.2mdn.net/ads/"), url-prefix("https://s4.2mdn.net/ads/"), url-prefix("https://s5.2mdn.net/ads/"), url-prefix("https://s6.2mdn.net/ads/"), url-prefix("https://s7.2mdn.net/ads/"), url-prefix("https://s8.2mdn.net/ads/"), url-prefix("https://s9.2mdn.net/ads/"), domain("googleads.g.doubleclick.net"), domain("tpc.googlesyndication.com") {
-html {
-    visibility: hidden
-}
+@-moz-document regexp("(http|https)://.*.doubleclick.net/.*"), regexp("(http|https)://.*googlesyndication.*/.*"), regexp("(http|https)://.*..*mdn.net/.*") {
+    body,head {
+        display: none;
+    }
+    html:after {
+        content:"Ad removed by ad hider userstyle."
+    }
 }
