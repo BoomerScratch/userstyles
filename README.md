@@ -14,3 +14,8 @@ Adds scrollbars to scratch forum posts & signatures if they are too long
 Hides all ads on youtube videos (like the ones that are in front of your video)
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://github.com/BoomerScratch/userstyles/raw/master/youtube-video-ad-hider.user.css)
+
+### Scratch forums quote & code beautifier
+Better quotes and code on the scratch forums
+
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://github.com/BoomerScratch/userstyles/raw/master/scratch-forum-quote-code-beautifier.user.css)
