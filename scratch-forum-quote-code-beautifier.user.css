@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name           Scratch Forums Quote & Code Beautifier
+@namespace      boomerscratch.github.io
+@version        1.0.0
+@description    Better quotes and code on the scratch forums
+@author         BoomerScratch
+@homepageURL    https://github.com/BoomerScratch/userstyles/blob/master/scratch-forum-quote-code-beautifier.user.css
+@supportURL     https://github.com/BoomerScratch/userstyles/issues/new/?title=Scratch%20Forums%20Quote%20%26%20Code%20Beautifier&body=_Please%20describe%20your%20problem_
+@updateURL      https://raw.githubusercontent.com/BoomerScratch/userstyles/master/scratch-forum-quote-code-beautifier.user.css
+@license        MIT
+@var   color    bgc  "Quote background color"  rgba(0,0,0,0.03)
+@var   checkbox lb   "Left border?"            1
+@var   text     lbz  "Left border size"        2px
+@var   color    lbc  "Left border color"       #28A5DA
+@var   checkbox tb   "Top border?"             0
+@var   text     tbz  "Top border size"         2px
+@var   color    tbc  "Top border color"        #28A5DA
+@var   checkbox rb   "Right border?"           0
+@var   text     rbz  "Right border size"       2px
+@var   color    rbc  "Right border color"      #28A5DA
+@var   checkbox bb   "Bottom border?"          0
+@var   text     bbz  "Bottom border size"      2px
+@var   color    bbc  "Bottom border color"     #28A5DA
+@preprocessor   stylus
+==/UserStyle== */
+@-moz-document url-prefix("https://scratch.mit.edu/discuss/topic/"), url-prefix("https://scratch.mit.edu/discuss/search/"), url-prefix("https://scratch.mit.edu/discuss/settings/"), regexp("(http|https)://scratch.mit.edu/discuss/post/.*/edit/") {
+.code, .postmsg blockquote {
+border: none;
+if (lb) {
+border-left: lbz solid lbc;
+}
+if (tb) {
+border-top:  tbz solid tbc;
+}
+if (rb) {
+border-right:rbz solid rbc;
+}
+if (bb) {
+border-bottom:bbz solid bbc;
+}
+background:  bgc;
+}
+}
